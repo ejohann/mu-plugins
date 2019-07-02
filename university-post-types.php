@@ -42,7 +42,7 @@
 
 		//professor post type
 		register_post_type('professor', array(
-			'supports' => array('title', 'editor'),
+			'supports' => array('title', 'editor', 'thumbnail'),
 			'show_in_rest' => true,
 			'public' => true,
 			'labels' => array(
