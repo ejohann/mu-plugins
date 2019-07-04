@@ -43,8 +43,7 @@
 
   		//program post type
   		register_post_type('program', array(
-			'supports' => array('title', 'editor'),
-			'show_in_rest' => true,
+			'supports' => array('title'),
 			'rewrite' => array(
   			'slug' => 'programs'
 			),
