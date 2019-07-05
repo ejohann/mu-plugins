@@ -83,7 +83,7 @@
 		//note post type
 		register_post_type('note', array(
 			'show_in_rest' => true,
-			'supports' => array('title', 'editor'),
+			'supports' => array('title', 'editor', 'author'),
 			'public' => false,
 			'show_ui' => true,
 			'labels' => array(
