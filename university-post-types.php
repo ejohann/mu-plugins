@@ -24,6 +24,8 @@
 
         //event post type
 		register_post_type('event', array(
+			'capability_type' => 'event',
+			'map_meta_cap' => true,
 			'supports' => array('title', 'editor', 'excerpt'),
 			'show_in_rest' => true,
 			'rewrite' => array(
