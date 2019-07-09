@@ -67,7 +67,6 @@
 		register_post_type('professor', array(
 			'show_in_rest' => true,
 			'supports' => array('title', 'editor', 'thumbnail'),
-			'show_in_rest' => true,
 			'public' => true,
 			'labels' => array(
 				'name' => 'Professors',
@@ -113,6 +112,22 @@
 			),
 			'menu_icon' => 'dashicons-heart'
 		));
+
+
+		//slider post type
+		register_post_type('slider', array(
+			'supports' => array('title', 'editor', 'thumbnail'),
+			'public' => true,
+			'labels' => array(
+				'name' => 'Slider',
+				'add_new_item' => 'Add New Slide',
+				'edit_item' => 'Edit Slide',
+				'all_items' => 'All Slides',
+				'singular_name' => 'Slide'
+			),
+			'menu_icon' => 'dashicons-format-gallery'
+		));
+
 	}
 
 	add_action('init', 'university_post_types');
