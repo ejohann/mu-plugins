@@ -116,7 +116,7 @@
 
 		//slider post type
 		register_post_type('slider', array(
-			'supports' => array('title', 'editor', 'thumbnail'),
+			'supports' => array('title', 'editor'),
 			'public' => true,
 			'labels' => array(
 				'name' => 'Slider',
